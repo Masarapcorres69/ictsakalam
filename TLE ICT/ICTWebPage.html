@@ -1,0 +1,1112 @@
+<html lang="en">
+
+<head>
+
+<title>ICT Web Page</title>
+
+<link rel="icon"href="logo.jpg"type="image/x-icon">
+
+<style>
+
+nav {width:25px; height:30px; background-image:url('Desktop.jpg'); transition: width 2s, height 2s, transform 2s; background-repeat:no-repeat;}
+nav:hover{width:200px; height:215;transform: rotate(360deg);}
+
+p.sec1{text-decoration:overline;text-decoration-color:red;text-decoration-style:solid;text-decoration-thickness:5px;padding:13px;}
+p.sec2{text-decoration:line-through;text-decoration-color:blue;text-decoration-style:double;text-decoration-thickness:5px;padding:13px;}
+p.sec3{text-decoration:underline;text-decoration-color:green;text-decoration-style:dotted;text-decoration-thickness:5px;padding:13px;}
+p.sec4{text-decoration:overline underline;text-decoration-color:purple;text-decoration-style:dashed;text-decoration-thickness:5px;padding:13px;}
+p.sec5{text-decoration:overline underline;text-decoration-style:wavy;text-decoration-thickness:3px;padding:13px;}
+p.sec6{text-decoration:underline;text-decoration-color:red;text-decoration-style:wavy;text-decoration-thickness:5px;padding:13px;}
+
+table,th,td{border:5px double black;border-color:pink;}
+
+img.a{vertical-align:baseline;}
+img.b{vertical-align:text-top;}
+img.c{vertical-align:text-bottom;}
+img.d{vertical-align:sub;}
+img.e{vertical-align:sup;}
+
+/*style the header*/header{
+background-color:black;
+padding:50px;
+text-align: center;
+font-size:60px;
+color:white;}
+
+/*style the footer*/footer{background-color:black;
+padding:5px;
+font-size:40px;
+color:white;}
+
+*{box-sizing:border-box;}
+
+body{margin:0;}
+
+/*Create three equal columns that
+
+floats next to each other*/.column
+{float:left;width:33.33%; padding:15px;}
+
+/*Clear floats after the columns*/.row::after{content:"";display:table;
+clear:both;}
+
+/*Responsive layout - makes the
+
+three columns stack on top of each
+ 
+other instead of next to each other
+
+*/
+@media screen and (max-width:600px){.column
+{width:100%}
+}
+
+ul {
+ list-style-type: none;
+ margin: 0;
+padding: 5px;
+background-color: grey
+;
+overflow: hidden; }
+
+li {
+ float: left;
+}
+
+li a, .dropbtn {
+
+ display: inline-block;
+ color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn
+{ background-color: white;
+ color: black;
+}
+
+li.dropdown {
+display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+background-color: black;
+ min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+ color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+ background-color: white;
+color: black;
+}
+
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: grey;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: black;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+background-color: grey;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: white; color: black;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+h1{padding-left:13px;}
+
+h3{padding-left:13px;}
+
+</style>
+
+</head>
+
+<body>
+
+<ul>
+ <li>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="#1stquarter">1st Quarter</a>
+  <a href="#2ndquarter">2nd Quarter</a>
+  <a href="#3rdquarter">3rd Quarter</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">Quarters</button>  
+ 
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+
+</script>
+
+</li>
+<li><a href="#references">References</a></li>
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropbtn">About Us</a>
+<div class="dropdown-content">
+<a href="https://www.facebook.com/share/1EZo31Tm88/">Christian I. Corres</a>
+<a href="https://www.facebook.com/share/1BNT4iz3Qd/">John Alexis B. Aresta</a>
+<a href="https://www.facebook.com/share/19D6j6XuCD/">John Mark Meneses</a>
+<a href="https://www.facebook.com/share/1BppnVR26P/?mibextid=wwXIfr">Kyle Raphael Callo</a>
+<a href="https://www.facebook.com/share/1Db9HU3tYS/">Hannah Mae Monteclaro</a>
+</div>
+</li>
+</ul>
+
+
+
+<header>
+<h2>10 ICT Lessons</h2>
+</header>
+<section id="1stquarter">
+<h1>1st Quarter</h1>
+<hr>
+<div class="row">
+
+<div class="column">
+<h3>HTML Tag Reference</h3>
+<p style="padding-left:13px;"><code>&lt;html&gt;</code> - Defines the root of HTML Document.
+<br><code>&lt;tittle&gt;</code> - Defines the tittle of the Document.
+<br><code>&lt;body&gt;</code> - Defines the Documents body.
+<br><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> - Defines Heading.
+<br><code>&lt;p&gt;</code> - Defines a Paragraph.
+<br><code>&lt;hr&gt;</code> - Defines a thematic change in the document.
+<br><code>&lt;br&gt;</code> - insert a single line break.
+<br><code>&lt;pre&gt;</code> - Defines pre-formatted text.
+</p>
+</div>
+
+<div class="column">
+<h3>HTML Structure</h3>
+<p style="padding-left:13px;"><code>&lt;IDOCTYPE html&gt;</code>
+<br><code>&lt;html&gt;</code>
+<br><code>&lt;head&gt;</code>
+<br><code>&lt;tittle&gt;My Site&lt;/tittle&gt;</code>
+<br><code>&lt;/head&gt;</code>
+<br><code>&lt;body&gt;</code>
+<br>
+<p style="padding-left:13px;">content of the document.......
+<br>
+<br>
+<br><code>&lt;/html&gt;</code>
+<br><code>&lt;/head&gt;</code>
+</p>
+</div>
+
+<div class="column">
+<h3>Text Editor Used</h3>
+<p style="padding-left:13px;"><ol>
+<li>Notepad</li><br>
+<li>Notepad++</li><br>
+<li>HTML Creator(using mobile)</li><br>
+<li>File Manager + (using mobile)</li><br>
+</ol>
+<h3>Browser Used</h3><ol>
+<li>Chrome</li><br>
+<li>Internet Explorer/Edge</li><br>
+<li>Safari</li><br>
+<li>Firefox</li><br>
+<li>Opeera</li><br></ol>
+</div>
+<hr>
+<h3>HTML Formatting Elements</h3>
+<section id="content">
+<div class="row">
+
+<div class="column">
+<p><b>Bold:</b> Makes text bold to emphasize importance.
+            <br>Example: <code>&lt;b&gt;This is bold text.&lt;/b&gt;</code>
+        </p>
+        <p><i>Italic:</i> Italicizes text, often used for emphasis or titles.
+            <br>Example: <code>&lt;i&gt;This is italicized text.&lt;/i&gt;</code>
+        </p>
+        <p><u>Underline:</u> Underlines text, sometimes used for links or emphasis.
+            <br>Example: <code>&lt;u&gt;This is underlined text.&lt;/u&gt;</code>
+        </p>
+</div>
+
+<div class="column">
+  <p><del>Delete:</del> Draws a line through text, often used to indicate something is deleted or outdated.
+            <br>Example: <code>&lt;del&gt;This text is struck through.&lt;/del&gt;</code>
+        </p>
+        <p><mark>Highlight:</mark> Highlights text, drawing attention to it.
+            <br>Example: <code>&lt;mark&gt;This text is highlighted.&lt;/mark&gt;</code>
+        </p>
+        <p><small>Small:</small> Displays text in a smaller font size.
+            <br>Example: <code>&lt;small&gt;This is small text.&lt;/small&gt;</code>
+        </p>
+</div>
+
+<div class="column">
+  <p>Superscript: Raises text slightly above the baseline, often used in mathematical expressions or footnotes.
+            <br>Example: <code>E = mc&lt;sup&gt;2&lt;/sup&gt;</code>
+        </p>
+        <p>Subscript: Lowers text slightly below the baseline, commonly used for chemical formulas.
+            <br>Example: <code>H&lt;sub&gt;2&lt;/sub&gt;O</code>
+        </p>
+</div>
+</div>
+<hr>
+<h3>CSS can be added to HTML in 3 Different Ways</h3>
+
+<p style="padding-left:13px;"><b>Remember Syntax:<code>&lt;tagname style="property:value;"&gt;</code></b></p>
+<div class="row">
+
+<div class="column">
+<p><b>Inline</b> - by using the style attribute inside HTML elements<br>
+The Code:<br> <code>&lt;p style="background-color:blue;color:red"&gt;Computer is a Device&lt;/p&gt;</code><br></p>
+</div>
+
+<div class="column">
+<p><b>Internal Line</b> - by using a <code>&lt;style&gt;</code> element in the <head> section<br>
+The Code:
+<br><code>&lt;head&gt;</code><br>
+<code>&lt;style&gt;</code><br>
+body {background-color: powderblue;}<br>
+h1 {color: blue;}<br>
+p {color: red;}<br>
+<code>&lt;/style&gt;</code><br>
+<code>&lt;/head&gt;</code><br></p>
+</div>
+
+<div class="column">
+<p><b>External Line</b> - by using a <code>&lt;link&gt;</code> element to link to an external CSS file<br>
+The Code:
+<br><code>&lt;head&gt;</code>
+<br><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code><br>
+<code>&lt;/head&gt;</code><br>
+</p>
+</div>
+</div>
+<hr>
+<h3>Background-Color and Color</h3>
+<div class="row">
+
+<div class="column">
+<p><b>Background-Color property </b>defines the background color for an HTML element.<br>
+Example:<br></p>
+<h1 style="background-color:blue;">ICT</h1>
+<p>The Code: <code>&lt;h1 style="background-color:blue;"&gt;</code>ICT<code>&lt;/h1&gt;</code><br></p>
+</div>
+
+<div class="column">
+<p><b>Color property</b> defines the text color for an HTML element.<br>Example:<br></p>
+<h1 style="color:green;">ICT</h1>
+<p>The Code: <code>&lt;h1 style="color:green;"&gt;</code>ICT<code>&lt;/h1&gt;</code><br></p>
+</div>
+
+<div class="column">
+<p><b>Mix</b> of background color and color of the text.<br>
+Example:<br></p>
+<h1 style="background-color:darkblue;color:lime;">ICT</h1>
+<p>The Code: <code>&lt;h1 style="background-color:darkblue;color:forestgreen;"&gt;</code>ICT<code>&lt;/h1&gt;</code><br></p>
+
+
+</p>
+</div>
+<hr>
+
+
+<h3>Font-Size, Font-Family, and Text-Alignment</h3>
+<div class="row">
+
+<div class="column">
+<p><b>Text-Size</b><br>font-size property defines the text size for an HTML element<br>
+Example:</p>
+<h1 style="font-size:50px;padding-left:13px;">ICT</h1>
+<p>The Code: <code>&lt;h1 style="font-size:50px;"&gt;</code>ICT<code>&lt;/h1&gt;</code><br>
+</p>
+</div>
+
+<div class="column">
+<p><b>Font-Family</b><br>font-family property defines the font to be used for an HTML element<br>
+Example:</p>
+<h1 style="font-family:cursive;">ICT</h1>
+<p>The Code: <code>&lt;h1 style="font-family:cursive;"&gt;</code>ICT<code>&lt;/h1&gt;</code></p>
+</div>
+
+<div class="column">
+<p><b>Text-Alignment</b><br>text-align property defines the horizontal text alignment for an HTML element<br>
+Example:</p>
+<h1 style="text-align:left;">ICT</h1>
+<h1 style="text-align:center;">ICT</h1>
+<h1 style="text-align:right;">ICT</h1>
+<p>The Code:<br> <code>&lt;h1 style="text-align:left;"&gt;</code>ICT<code>&lt;/h1&gt;</code><br><code>&lt;p style="text-align:center;"&gt;</code>ICT<code>&lt;/p&gt;</code><br>
+<code>&lt;h1 style="text-align:right;"&gt;</code>ICT<code>&lt;/h1&gt;</code></p>
+</div>
+</div>
+<hr>
+<div class="row">
+
+<div class="column">
+<h3>Image Insert</h3>
+<img src="Desktop.jpg" width="300" height="200">
+<p>The Code:<br> <code>&lt;img src="name of the image" width="#" height="#"&gt;</code>
+
+</div>
+
+<div class="column">
+<h3>Hyperlink Insert</h3>
+<a href="https://r.search.yahoo.com/_ylt=Awr99ualKZtnPAgBk2lXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1739431590/RO=10/RU=https%3a%2f%2fwww.youtube.com%2f/RK=2/RS=m_pmtWbWnJr9DDf5QAs7DRGXn1o-">Youtube</a>
+<br><a href="https://r.search.yahoo.com/_ylt=AwrjeVLOKZtneJsBO8tXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1739431630/RO=10/RU=https%3a%2f%2fwww.facebook.com%2f/RK=2/RS=oL.i7TLkYzjFjOAwAtMJLdILMgs-">Facebook</a><br>
+<a href="https://r.search.yahoo.com/_ylt=Awr48NReKptnWisB64RXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1739431775/RO=10/RU=https%3a%2f%2fwww.google.com%2f/RK=2/RS=JUQ8HUccGIa8UHMXwN5Q5Hyo9Qo-">Google</a>
+
+<p>The Code:<br> <code>&lt;a href="url or link address"&gt;Youtube&lt;/a&gt;</code>
+<p>The Code:<br> <code>&lt;a href="url or link address"&gt;Facebook&lt;/a&gt;</code>
+<p>The Code:<br> <code>&lt;a href="url or link address"&gt;Google&lt;/a&gt;</code>
+
+</div>
+
+<div class="column">
+<h3>Types Of Border</h3>
+<p style="border:2px dotted purple;border-color: red blue green yellow;"> Dotted Border</p>
+<p style="border:2px dashed blue; border-color:  blue pink purple orange; border-radius:50px;background-color:yellow;"> Dashed Border</p>
+<p style="border:2px solid tomato; border-radius:50px; background-color:mediumseagreen;">Solid Border</p>
+<p style="border:2px double red;border-color: red green blue indigo; border-radius:15px;">Double Border</p>
+<p style="border:2px groove yellow;">Groove Border</p>
+<p style="border:2px ridge green;">Ridge Border</p>
+<p style="border:2px inset orange;">Inset Border</p>
+<p style="border:2px outset darkblue;">Outset Border</p>
+<p style="border:2px none gray;">None Border</p>
+<p style="border:2px hidden;background-color:violet;">Hidden Border</p>
+
+<p>The Code:<br> <code>&lt;p style="border:2px dotted purple;border-color: red blue green yellow;"&gt;Dotted Border&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px dashed blue; border-color:  blue pink purple orange; border-radius:50px;background-color:yellow;"&gt;Dashed Border&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px solid tomato; border-radius:50px; background-color:mediumseagreen;"&gt;Solid Border&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px double red;border-color: red green blue indigo; border-radius:15px;"&gt;Double Borde&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px groove yellow;">Groove Border"&gt;Groove Border&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px ridge green;"&gt;Ridge Border&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px inset orange;"&gt;Inset Border&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px outset darkblue;"&gt;Outset Border&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px none gray;"&gt;None Border&lt;/p&gt;</code>
+
+<p>The Code:<br> <code>&lt;p style="border:2px hidden;background-color:violet;"&gt;Hidden Border&lt;/p&gt;</code>
+
+</div>
+</div>
+</section>
+<hr>
+
+<section id="2ndquarter">
+<h1>2nd Quarter</h1>
+<hr>
+<h3>Mapping</h3>
+</hr>
+<p style="padding:13px;">Image Maps</p>
+
+<p style="padding:13px;">The <code>&lt;map&gt;</code> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <code>&lt;area&gt;</code> tags.</p>
+<p style="padding:13px;">Areas</p>
+
+
+<p style="padding-left:13px;">A clickable area is defined using an <code>&lt;area&gt;</code> element.
+ Shape VALUES of the clickable area:
+ 
+rect - defines a rectangular region
+ 
+,circle - defines a circular region
+ 
+,poly - defines a polygonal region
+ 
+, and default - defines the entire region
+ 
+</p>
+<h3>Image Maps</h2>
+<img src="Desktop.jpg" alt="Desktop" usemap="#Desktop" height="500" Width="800">
+
+<map name="Desktop">
+<area shape="rect" coords="0,1,330,275" href="http://127.0.0.1:25285/main/0/storage/emulated/0/Monitor.html">
+<area shape="poly" coords="332,10,379,12,550,10,600,340,360,355,300,320,299,300,332,299" alt="System Unit" href="http://127.0.0.1:25285/main/0/storage/emulated/0/System%20Unit.html">
+<map name="Desktop">
+<area shape="rect" coords="150,270,550,500" alt="Keyboard" href="http://127.0.0.1:25285/main/0/storage/emulated/0/Keyboard.html">
+<map name="Desktop">
+<area shape="circle" coords="630,375,50" alt="Mouse" href="http://127.0.0.1:25285/main/0/storage/emulated/0/Mouse.html">
+
+<p style="padding:13px;">The Code:<br><code>&lt;img src="Desktop.jpg" alt="Desktop" usemap="#Desktop" height="500" Width="800"&gt;</code><br>
+<code>&lt;map name="Desktop"&gt;</code><br>
+<code>&lt;area shape="rect" coords="0,1,330,275"<br> href="Url of other HTML"&gt;</code><br>
+<code>&lt;area shape="poly" coords="332,10,379,12,550,10,600,340<br>,360,355,300,320,299,300,332,299" href="Url of other HTML"&gt;</code><br>
+<code>&lt;area shape="rect" coords="150,270,550,500" href="Url of other HTML"&gt;</code><br>
+<code>&lt;area shape="circle" coords="630,375,50" href="Url of other HTML"&gt;</code>
+<code>&lt;/head&gt;</code>
+<code>&lt;/div&gt;</code>
+<hr>
+
+<h3>SELECTIONS 1,2,3</h3>
+
+<p style="padding-left:13px;">CSS Selectors are used to "find" (or select) the HTML elements you want to style.</p>
+
+<p style="padding-left:13px;"> Five Categories:</p>
+<p style="padding-left:13px;">
+1. Simple selectors
+<br>2. Combinator selectors
+<br>3. Pseudo-class selectors
+<br>4. Pseudo-elements selectors
+<br>5. Attribute selectors
+</p>
+<hr>
+<br>
+
+
+<h3> 1. Simple selectors <br>(select elements based on name, id, class) </h3>
+<br>
+<h3>
+
+<head>
+<style>
+#para1
+{ text-align: center; color: red;
+}
+</style>
+</head>
+<body>
+<p id="para1">Hello SDIHS!</p>
+<p>The quick brown fox jumps over the lazy dog.</p> </body>
+<br>
+<h3>The code:</h3>
+<p style="padding-left:13px;">p <br>{ text-align: center; <br>color: red; <br>}</p>
+<p style="padding-left:13px;";><code> &lt;style&gt; <br>#para1
+{ text-align: center; color: red;
+<br>}
+<br>&lt;/style&gt
+<br>&lt/head&gt
+<br>&ltbody&gt
+&ltp id="para1">Hello SDIHS!&lt/p&gt
+<br>&ltp&ltThe quick brown fox jumps over the lazy dog.&lt/p&gt
+<br>&lt;/body&gt;<code></p>
+
+<hr>
+
+
+<h3>CSS Selectors - Class Selector</h3>
+
+ <p style="padding-left:13px;">
+<head> <style> .center { text-align: center; color: red; } </style> </head> <body> <h1 class="center">Hello SDIHS!</h1> <p class="center">The quick brown fox jumps over the lazy dog.</p> </body>
+</p>
+
+
+<h3>The code:</h3>
+
+<p style="padding-left:13px;";><code> &lt;head&gt; <br>&ltstyle&gt<br> .center <br>{<br> text-align: center; color: red;<br> } <br>&lt/style&gt<br> &lt/head> <br>&ltbody> <br>&lth1 class="center"&ltHello SDIHS!&lt/h1&gt<br> &ltp class="center"&gtThe quick brown fox jumps over the lazy dog.&lt/p&gt <br>&lt;/body&gt;<code></p>
+
+<hr>
+<br>
+<h3>CSS Selectors - Universal Selector</h1>
+<br>
+<p style="padding-left:13px;";>uses asterisk (*) select all HTML elements on the page.</p>
+<br>
+<div>
+<p style="padding-left:13px;">
+
+
+*
+{
+text-align: center;<br>
+ color: blue; <br>
+}
+<br>&lt/style&gt
+<br>&lt/head&gt
+<br>&ltbody&gt
+<br> &lth1&gtHello SDIHS!&lt/h1&gt
+<br> &ltp&gtGrade X.&lt/p&gt
+<br> &ltp id="para1"&gtX - A&lt/p&gt
+<br>&ltp&gtX - B&gt/p&lt
+</p>
+
+</div>
+<hr>
+<br>
+<h3>CSS Selectors - Group Selector </h3>
+
+<p style="padding-left:13px;">selects all the HTML elements with the same style definitions.</p>
+
+<p style="padding-left:13px;">
+
+h1<br>{
+<br>text-align: center;<br>
+color: red;
+<br>}
+h2 {<br>
+<br>text-align: center;
+<br>color: red;<br>
+}
+p{<br>
+<br> text-align: center;
+<br>color: red;<br>
+} h1, h2, p { text-align: center;
+color: red; }
+
+</p>
+<hr>
+<br>
+
+<h3>CSS Selectors - Combinator selectors</h3>
+<p style="padding-left:13px;">2. Combinator selectors (select elements based on a specific relationship between them)</p>
+<p style="padding-left:13px;">
+ Four different combinators in CSS:<br>
+<br>1. descendant selector (space)
+<br>2. child selector (>)
+<br>3. adjacent sibling selector (+)
+<br>4. general sibling selector (~)
+</p>
+<br>
+
+
+<p style="padding-left:13px;">
+&ltstyle&gt<br>
+ div p {
+<br>background-color: <br>yellow;<br>}
+<br>&ltstyle&gt
+<br> &lthead&gt
+<br>&ltbody&gt
+<br>&lth1&gtDescendant Select&lt/h1&gt
+<br>&lth2&gtGrade and Section&lt/h2&gt
+
+<br>&ltdiv&gt &ltp&gtKanlaon&lt/p&gt
+<br>&ltp&gtMakiling / Pulag&lt/p&gt
+<br>&ltsection&gt
+<br>&ltp&gtSierra Madre&lt/p&gt
+<br>&lt/section&gt
+<br> &lt/div&gt
+</p>
+
+
+
+<h3>Child Selector (>) </h3>
+<p style="padding-left:13px;">
+selects all elements that are the children of a specified element.</p>
+<br>
+
+<p style="padding-left:13px;">
+ &lthead&gt<br>
+ &ltstyle&gt
+<br>div > p <br>{ background-color:Blue;}
+<br>&lt/style&gt
+<br>&lthead&gt Child Selector&lt/head&gt
+ <br>&lth2&gtGrade and Section&lt/h2&gt
+<br> &ltdiv&gt &ltp&gtKanlaon&lt/p&gt
+<br>&ltp&gtMakiling/Pulag&lt/p&gt
+<br> &ltsection&gt
+<br>&ltp&gtSierra Madre&lt/p&gt
+<br>&lt/section&gt
+<br>&ltp&ltMayon Banahaw&lt/p&gt
+<br> &lt/div&gt
+</p>
+<br>
+<hr>
+
+
+
+<h3>Adjacent Sibling Selector (+)</h3>
+
+<p style="padding-left:13px;">
+ is used to select an element that is directly after another specific element. Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+</p>
+<br>
+<p style="padding-left:13px;">
+div + p <br>{ <br>background-color: <br>yellow; <br>}
+</p>
+
+<h3>General Sibling Selector (~)
+</h3>
+ 
+<p style="padding-left:13px;">
+ selects all elements that are next siblings of a specified element.
+</p>
+<br>
+<br>
+
+<p style="padding-left:13px;">
+div~ p <br>{ background-color:orange;}
+</p>
+
+<h3>
+CSS Selectors - CSS Pseudo-Classes Selectors
+</h3>
+<p style="padding-left:13px;">
+3. CSS Pseudo-classes selectors used to define a special state of an element.
+<p>
+<p style="padding-left:13px;">
+Examples:
+<br>1. Style an element when a user mouses over it
+<br>2. Style visited and unvisited links differently
+<br>3. Style an element when it gets focus
+</p>
+
+<br>
+<p style="padding-left:13px;">
+selector: pseudo-class <br>{ <br>property: value; <br>}
+</p>
+<hr>
+
+
+
+<br>
+
+<h3>Pseudo-classes and HTML Classes </h3>
+
+<p style="padding-left:13px;">can be combined with HTML classes</p>
+
+<br>
+<p style="padding-left:13px;">
+&lt!DOCTYPE html&gt
+<br>&lthtml&gt
+<br> &lthead&gt
+<br> &ltstyle&gt
+<br>a.highlight:hover {
+<br>color: #ff0000; font-size: 22px;
+<br>} <br>&lt/style&gt
+ <br>&lt/head&gt
+<br>&ltbody&gt
+<br> &lth2>Pseudo-classes and HTML Classes</h2&gt
+ <br>&lth3>Contact Us</h3&gt
+ &ltp>&lta class="highlight" href="Name1.com">Name1&lt/a&gt</p&gt &ltp&gt&lta class="highlight" href="Name2.com">Name2&lt/a&gt</p&gt &ltp&gt&lta href="Name3.com">Name3&lt/a&gt&lt/p&gt
+ </body&gt
+</html&gt
+
+</p>
+<br>
+<hr>
+
+<h3>
+Hover on &ltdiv&gt
+</h3>
+<br>
+<p style="padding-left:13px;">
+div:hover <br>{ background- color: <br>blue; <br>}
+</p>
+
+
+
+
+<br>
+<hr>
+<h3>
+Simple Tooltip Hover
+</h3>
+<br>
+
+<p style="padding-left:13px;">
+ Hover over a &ltdiv> element to show a &ltp> element (like a tooltip): Hover over me to show the &ltp> element.
+<br>
+<p style="padding-left:13px;">
+p{<br> display: none; background-color:<br> yellow; padding: 20px; <br>} <br>div:hover p <br>{ display: block;}
+</p>
+<hr>
+<h3>Special Symbols or Characters</h3>
+
+<p style="padding-left:13px;">I will display &euro;</p>
+<p style="padding-left:13px;">I will display &#8364;</p>
+<p style="padding-left:13px;">I will display &#x20AC;</p>
+<p style="padding-left:13px;">i will display &#9824;</p>
+<p style="padding-left:13px;">i will display &#9829;</p>
+<p style="padding-left:13px;">i will display &diams;</p>
+<p style="padding-left:13px;">i will display &#8369;</p>
+<p style="padding-left:13px;">i will display &#128516;</p>
+<p style="padding-left:13px;">i will display &#8719;</p><br>
+
+<p style="padding-left:13px;">The Code:</p>
+<p style="padding-left:13px;"><code>&lt;p&gt;</code>I will display ampersand symboleuro;<code>&lt;p&gt;</code><br>
+<code>&lt;p&gt;</code>I will display ampersand symbol#8364;<code>&lt;p&gt;</code><br>
+<code>&lt;p&gt;</code>I will display ampersand symbol#x20AC;<code>&lt;p&gt;</code><br>
+<code>&lt;p&gt;</code>I will display ampersand symbol#9824;<code>&lt;p&gt;</code><br>
+<code>&lt;p&gt;</code>I will display ampersand symbol#9829;<code>&lt;p&gt;</code><br>
+<code>&lt;p&gt;</code>I will display ampersand symboldiams;<code>&lt;p&gt;</code><br>
+<code>&lt;p&gt;</code>I will display ampersand symbol#8369;<code>&lt;p&gt;</code><br>
+<code>&lt;p&gt;</code>I will display ampersand symbol#128516;<code>&lt;p&gt;</code><br>
+<code>&lt;p&gt;</code>I will display ampersand symbol#8719;<code>&lt;p&gt;</code></p>
+<hr>
+
+
+
+
+
+
+
+
+
+<br>
+<h3> Video Insert</h3>
+<p style="padding:13px">The Code:<br>
+<code>&lt;video width="700" height="500" controls&gt;</code><br>
+<code>&lt;source src="name of the video"
+type="video/mp4"&gt;</code><br>
+<code>&lt;/video&gt;</code></p>
+
+<video width="700" height="500" controls>
+<source src="ikaw na bahala sa video kyle"
+type="video/mp4">
+</video><br><br>
+
+<h3> Audio Insert</h3>
+<p style="padding:13px">The Code:<br>
+<code>&lt;audio width="300" height="300" controls&gt;</code><br>
+<code>&lt;source src="name of the voice record"
+type="audio/mp3"&gt;</code><br>
+<code>&lt;/audio&gt;</code></p>
+
+<audio width="300" height="300" controls>
+<source src="ikaw bahala sa audio kyle"
+type="audio/mp3">
+</audio>
+</section>
+<hr>
+
+<section id="3rdquarter">
+<h1>3rd Quarter</h1>
+<hr>
+<div class="row">
+
+<div class="column">
+<h3>List</h3>
+
+<p style="padding:13px;">Computer Components</p>
+<ol start="1" type="I">
+<li>Monitor</li><br>
+<li>Keyboard</li><br>
+<li>Mouse</li><br>
+<li>Webcam</li><br>
+<li>Printer</li><br>
+<li>System Unit</li><br>
+<li>Speaker</li>
+</ol><br>
+
+<p style="padding:13px;">The Code:<br>
+<code>&lt;ol start="1" type="I"&gt;</code><br>
+<code>&lt;li&gt;</code>Monitor<code>&lt;/li&gt;</code><br>
+<code>&lt;li&gt;</code>Keyboard<code>&lt;/li&gt;</code><br>
+<code>&lt;li&gt;</code>Mouse<code>&lt;/li&gt;</code><br>
+<code>&lt;li&gt;</code>Webcam<code>&lt;/li&gt;</code><br>
+<code>&lt;li&gt;</code>Printer<code>&lt;/li&gt;</code><br>
+<code>&lt;li&gt;</code>System Unit<code>&lt;/li&gt;</code><br>
+<code>&lt;li&gt;</code>Speaker<code>&lt;/li&gt;</code><br>
+<code>&lt;/ol&gt;</code><br></p>
+</div>
+
+
+
+
+<div class="column">
+<h3>Table</h3>
+<table style="width:50%">
+<tr>
+<th>HTML Tag</th>
+<th>Definition</th>
+</tr>
+<tr>
+<td><code>&lt;html&gt;</code></td>
+<td>Defines the root of HTML Document.</td>
+</tr>
+<tr>
+<td><code>&lt;body&gt;</code></td>
+<td>Defines the Documents body.</td>
+</tr>
+<tr>
+<td><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></td>
+<td>Defines the Heading.</td>
+</tr>
+<tr>
+<td><code>&lt;p&gt;</code></td>
+<td>Defines a Paragraph.</td>
+</tr>
+</table><br>
+<p style="padding:13px;">The Code:<br>
+<code>&lt;table style="width:50%"&gt;</tdcode><br>
+<code>&lt;tr&gt;</code><br>
+<code>&lt;td&gt;</code>Monitor<code>&lt;/td&gt;</code><br>
+<code>&lt;td&gt;</code>Keyboard<code>&lt;/td&gt;</code><br>
+<code>&lt;/tr&gt;</code><br>
+<code>&lt;tr&gt;</code><br>
+<code>&lt;td&gt;</code>Mouse<code>&lt;/td&gt;</code><br>
+<code>&lt;td&gt;</code>Webcam<code>&lt;/td&gt;</code><br>
+<code>&lt;/tr&gt;</code><br>
+<code>&lt;tr&gt;</code><br>
+<code>&lt;td&gt;</code>Printer<code>&lt;/td&gt;</code><br>
+<code>&lt;td&gt;</code>System Unit<code>&lt;/td&gt;</code><br>
+<code>&lt;/tr&gt;</code><br>
+<code>&lt;/table&gt;</code><br></p>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="column">
+<h3>Image in Paragraph</h3>
+<p>the <img class="a" src="Desktop.jpg"height="25px" width="25px">Computer is a Programmable Device.</p><br>
+<p>the <img class="b" src="Desktop.jpg"height="25px" width="25px">Computer is a Programmable Device.</p><br>
+<p>the <img class="c" src="Desktop.jpg"height="25px" width="25px">Computer is a Programmable Device.</p><br>
+<p>the <img class="d" src="Desktop.jpg"height="25px" width="25px">Computer is a Programmable Device.</p><br>
+<p>the <img class="e" src="Desktop.jpg"height="25px" width="25px">Computer is a Programmable Device.</p><br>
+<p style="padding:13px;">The Code:<br>
+<code>&lt;style&gt;</code><br>
+img.a{vertical-align:baseline;}<br>
+img.b{vertical-align:text-top;}<br>
+img.c{vertical-align:text-bottom;}<br>
+img.d{vertical-align:sub;}<br>
+img.e{vertical-align:sup;}<br>
+<code>&lt;/style&gt;</code><br>
+<code>&lt;/head&gt;</code><br>
+<code>&lt;body&gt;</code><br><br>
+<code>&lt;p&gt;</code>the<code>&lt;img class="a" src="name of the image"height="25px" width="25px"&gt;</code>Computer is a Programmable Device.<code>&lt;/p&gt;</code><br><br>
+<code>&lt;p&gt;</code>the<code>&lt;img class="b" src="name of the image"height="25px" width="25px"&gt;</code>Computer is a Programmable Device.<code>&lt;/p&gt;</code><br><br>
+<code>&lt;p&gt;</code>the<code>&lt;img class="c" src="name of the image"height="25px" width="25px"&gt;</code>Computer is a Programmable Device.<code>&lt;/p&gt;</code><br><br>
+<code>&lt;p&gt;</code>the<code>&lt;img class="d" src="name of the image"height="25px" width="25px"&gt;</code>Computer is a Programmable Device.<code>&lt;/p&gt;</code><br><br>
+<code>&lt;p&gt;</code>the<code>&lt;img class="e" src="name of the image"height="25px" width="25px"&gt;</code>Computer is a Programmable Device.<code>&lt;/p&gt;</code></p>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<hr>
+<div class="row">
+
+<div class="column">
+<h3>Simple Javascript</h3>
+<p id="demo">ICT JAVA SIMPLE</p>
+
+<script>
+function myFunction(){
+document.getElementById("demo").style.fontSize="50px";
+document.getElementById("demo").style.color="green";
+document.getElementById("demo").style.backgroundColor="black";}
+</script>
+<button type="button" onclick="myFunction()">Click ME!
+</button>
+<br>
+<script>
+function face(sw){var pic;if(sw==0){pic="mouse.jpeg.jpg";}else{pic="https://th.bing.com/th/id/R.1bf7012dd2b48074d1253096925a5246?rik=Cg1rXiLy8Ghonw&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2ff%2ff0%2fBijoy_Keyboard_image.jpg&ehk=kQK%2f%2bReX2ok7kJpuNHqupPeidSCA6GgZlIKYYlmNk%2bU%3d&risl=&pid=ImgRaw&r=0";}
+document.getElementById('mouse.jpeg.jpg').src=pic;}
+</script>
+<img id="mouse.jpeg.jpg" src"mouse.jpeg.jpg" width="200" height="200">
+<p>
+<button type="button" onclick="face(1)">Keyboard</button>
+<button type="button" onclick="face(0)">Mouse</button>
+</p>
+</div>
+<div class="column"
+<p style="padding:13px;">The Code:<br>
+<code>&lt;script&gt;</code><br>
+function myFunction(){<br>
+document.getElementById("demo").style.fontSize="50px";<br>
+document.getElementById("demo").style.color="green";<br>
+document.getElementById("demo").style.backgroundColor="black";}<br>
+<code>&lt;/script&gt;</code><br>
+<code>&lt;p id="demo"&gt;</code>ICT JAVA SIMPLE<code>&lt;/p&gt;</code><br>
+<code>&lt;p id="demo"button type="button" onclick="myFunction()"&gt;</code>Click ME!<code>&lt;/button&gt;</code><br>
+<code>&lt;script&gt;</code><br>
+function face(sw){var pic;if(sw==0){pic="mo.jpg"}else{pic="k.jpg"}<br>
+document.getElementById("myImage").src=pic;}<br>
+<code>&lt;/script&gt;</code><br>
+<code>&lt;img id="myImage" src"mo.jpg" width="200" height="200"&gt;</code><br>
+<code>&lt;p&gt;</code><br>
+<code>&lt;button type="button" onclick="face(1)"&gt;</code>Keyboard<code>&lt;/button&gt;</code><br>
+<code>&lt;button type="button" onclick="face(0)"&gt;</code>Mouse<code>&lt;/button&gt;</code><br><br>
+<code>&lt;/p&gt;</code></p>
+</div>
+</div>
+<hr>
+<div class="row">
+
+<div class="column">
+
+<h3>Text-Decoration</h3>
+<p class="sec1">Overline</p>
+<p class="sec2">Line-Through</p>
+<p class="sec3">Underline</p>
+<p class="sec4">Overline Underline</p>
+<p class="sec5">Wavy</p>
+<p class="sec6">Colored Wavy</p>
+</div>
+
+<div class="column">
+
+<p style="padding:13px;">The Code:<br>
+<code>&lt;style&gt;</code><br>
+p.sec1{text-decoration:overline;<br>text-decoration-color:red;<br>text-decoration-style:solid;<br>text-decoration-thickness:5px;}<br><br>
+p.sec2{text-decoration:line-through;<br>text-decoration-color:blue;<br>text-decoration-style:double;<br>text-decoration-thickness:5px;}<br><br>
+p.sec3{text-decoration:underline;<br>text-decoration-color:green;<br>text-decoration-style:dotted;<br>text-decoration-thickness:5px;}<br><br>
+p.sec4{text-decoration:overline underline;<br>text-decoration-color:purple;<br>text-decoration-style:dashed;text-decoration-thickness:5px;}</div>
+
+<div class="column">
+<br><br>p.sec5{text-decoration:overline underline;<br>text-decoration-style:wavy;<br>text-decoration-thickness:3px;}<br><br>
+p.sec6{text-decoration:underline;<br>text-decoration-color:red;<br>text-decoration-style:wavy;<br>text-decoration-thickness:5px;}<br>
+<code>&lt;/style&gt;</code><br>
+<code>&lt;body&gt;</code><br>
+<code>&lt;p class="sec1"&gt;</code>Overline<code>&lt;/p&gt;</code><br>
+<code>&lt;p class="sec2"&gt;</code>Line-Through<code>&lt;/p&gt;</code><br>
+<code>&lt;p class="sec3"&gt;</code>Underline<code>&lt;/p&gt;</code><br>
+<code>&lt;p class="sec4"&gt;</code>Overline Underline<code>&lt;/p&gt;</code><br>
+<code>&lt;p class="sec5"&gt;</code>Wavy<code>&lt;/p&gt;</code><br>
+<code>&lt;p class="sec6"&gt;</code>Colored Wavy<code>&lt;/p&gt;</code><br>
+</div>
+</div>
+<hr>
+
+
+<h3>Transition</h3>
+
+<nav></nav>
+<p style="padding:13px;">The Code:<br>
+<code>&lt;style&gt;</code><br>
+div {width:25px; height:30px; background-image:url('name of the image'); <br>transition: width 2s, height 2s, transform 2s; background-repeat:no-repeat;}<br>
+div:hover{width:200px; height:215;transform: rotate(360deg);}<br>
+<code>&lt;/style&gt;</code><br>
+<code>&lt;body&gt;</code><br>
+<code>&lt;div&gt;</code><code>&lt;/div&gt;</code></p>
+<br>
+<h1 style="font-size;20;"><marquee behavior="scroll" direction="left" scrollamount="30">I LOVE ICT</marquee></h1>
+<p style="padding:13px;">The Code:<br>
+<code>&lt;marquee behavior="scroll" direction="left" scrollamount="30"&gt;</code>I LOVE ICT<code>&lt;/marquee&gt;</code><br><hr>
+
+<h3>Animation</h3>
+<marquee direction="left" scrollamount="69">
+<img vspace ="100">
+<img src="airplane gif" width="70%" />
+</marquee>
+<marquee direction="left" scrollamount="35">
+
+<img src="500">
+<img src="C:\Users\juvelon\OneDrive\Desktop/running man.gif" width="35%"/>
+<img src="C:\Users\juvelon\OneDrive\Desktop/running man.gif"  width="20%"/>
+</marquee>
+<p style="padding:13px;">The Code:<br>
+<code>&lt;marquee direction="left" scrollamount="69"&gt;</code><br>
+<code>&lt;img vspace ="100"&gt;</code><br>
+<code>&lt;img src="airplane gif" width="70%" /&gt;</code><br>
+<code>&lt;/marquee&gt;</code><br>
+<code>&lt;marquee direction="left" scrollamount="35"&gt;</code><br>
+<code>&lt;img vspace="500"&gt;</code><br>
+<code>&lt;img src="computer running gif" width="35%"/&gt;</code><br>
+<code>&lt;img src="Running man gif" width="20%"/&gt;</code><br>
+<code>&lt;/marquee&gt;</code><br></p>
+<h1 style="font-family:Cursive;font-size:20;text-align:center;">THATS ALL THANK YOU</h1>
+
+
+
+
+
+
+
+</section>
+<section id="references">
+<footer>
+
+<h5>References:</h5>
+<h6>If you want to learn more and ask help go to this link:</h6>
+<h6>
+<a href="https://sites.google.com/view/teacher-joseph/home?fbclid=IwZXh0bgNhZW0CMTEAAR1cps4NQb4vks4uno4YJe6M-sTNzdSe1QWMpEsM4z3lc9a6Hb0vQTv3xy0_aem_tsWkHrwf1HyFni4hWa4F4Q">Teacher Joseph Trajano</a><br>
+
+<a href="https://www.w3schools.com/">W3Schools</a><br>
+
+<a href="https://www.figma.com/design/?utm_source=bing&utm_medium=cpc&utm_campaign=521069273&utm_term=free%20online%20design%20tool&utm_matchtype=p&utm_query=logo%20maker%20online%20free&utm_content=82120152599836&utm_adgroup=1313918778004641&msclkid=c3e43648da581679491c51d51808fe1f">Logo Maker</a><br>
+
+<a href="https://www.wikipedia.org/
+">Wikipedia</a><br>
+
+<a href="https://r.search.yahoo.com/_ylt=Awr99ualKZtnPAgBk2lXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1739431590/RO=10/RU=https%3a%2f%2fwww.youtube.com%2f/RK=2/RS=m_pmtWbWnJr9DDf5QAs7DRGXn1o-">Youtube</a><br>
+
+<a href="https://r.search.yahoo.com/_ylt=AwrjeVLOKZtneJsBO8tXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1739431630/RO=10/RU=https%3a%2f%2fwww.facebook.com%2f/RK=2/RS=oL.i7TLkYzjFjOAwAtMJLdILMgs-">Facebook</a><br>
+
+<a href="https://r.search.yahoo.com/_ylt=Awr48NReKptnWisB64RXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1739431775/RO=10/RU=https%3a%2f%2fwww.google.com%2f/RK=2/RS=JUQ8HUccGIa8UHMXwN5Q5Hyo9Qo-">Google</a>
+
+</h6>
+
+</footer>
+</section>    
+
+</body>
+</html>
